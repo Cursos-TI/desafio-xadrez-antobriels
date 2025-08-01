@@ -1,32 +1,30 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
+int main(){
+    int bispo, torre, rainha;
+    bispo = 0; torre = 0; rainha = 0;
 
-int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    printf("Simulação da movimentação das Peças de Xadrez:\n");
+    printf("\nDigite 1 para ver os movimentos da Rainha: ");
+    scanf("%d");
+    
+    for (rainha; rainha < 8; rainha++){
+        printf("Rainha se moveu para a esquerda\n");
+    }
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    printf("\nDigite 1 novamente para ver os movimentos do Bispo: ");
+    scanf("%d");
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
-
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
-
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
-
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
-
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
-
-    return 0;
+    while (bispo < 5){
+        printf("Bispo se moveu para a diagonal (Cima, Direita)\n");
+        bispo++;
+    }
+    
+    printf("\nDigite 1 novamente para ver os movimentos da Torre: ");
+    scanf("%d");
+    
+    do {
+        printf("Torre se moveu para a direita\n");
+        torre++;
+    } while (torre < 5);
 }
